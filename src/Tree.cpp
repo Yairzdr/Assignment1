@@ -1,4 +1,50 @@
 //
-// Created by spl211 on 01/11/2020.
+// Created by Yairzdr on 01/11/2020.
 //
+#include "../include/Tree.h"
+// simple constructor
+//Tree::Tree(int rootLabel):node(),children() {}//not sure about exact implementation
 
+// destructor
+
+// copy constructor
+
+// copy assignment operator
+
+// move constructor
+
+// move assignment operator
+
+// this function adds a child to the tree
+void Tree::addChild(const Tree &child) {
+
+}
+
+// ?????????????????? what the fuck is that?
+Tree *Tree::createTree(const Session &session, int rootLabel) {
+    return nullptr;
+}
+
+// CycleTree simple constructor
+//CycleTree::CycleTree(int _rootLabel, int _currCycle) : Tree(_rootLabel),currCycle(_currCycle){}
+
+// this used by the ContactTracer
+int CycleTree::traceTree() {
+    return 0;
+}
+
+// MaxRankTree simple constructor
+//MaxRankTree::MaxRankTree(int _rootLabel) : Tree(_rootLabel) {}
+
+// this used by the ContactTracer
+int MaxRankTree::traceTree() {
+    return 0;
+}
+
+// RootTree simple constructor
+//RootTree::RootTree(int _rootLabel) : Tree(_rootLabel) {}
+
+// this used by the ContactTracer
+int RootTree::traceTree() {
+    return 0;
+}
