@@ -10,7 +10,7 @@ public:
     void infectNode(int nodeInd);
     bool isInfected(int nodeInd);
 private:
-    std::vector<std::vector<int>> edges;//removed one > after <int>> that was placed there for no reason (Yair)
+    std::vector<std::vector<int>> edges;
 };
 
 #endif

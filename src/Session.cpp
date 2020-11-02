@@ -37,8 +37,8 @@ int Session::dequeueInfected() {//where is the infected queue?
 }
 
 // returns the TreeType Cycle/MaxRank/Root
-/*TreeType Session::getTreeType() {
+TreeType Session::getTreeType() const{
     return treeType;
 }
-*/
+
 

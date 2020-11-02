@@ -5,8 +5,7 @@
 #include "../include/Agent.h"
 
 // simple constructor
-Agent::
-Agent(Session& _session):session(_session){}
+Agent::Agent(Session& _session):session(_session){}
 
 // destructor
 
@@ -26,8 +25,7 @@ void Virus::act() {
 }
 
 // ContactTracer constructor overwrite
-ContactTracer::
-ContactTracer(Session &session) : Agent(session) {}
+ContactTracer::ContactTracer(Session &session) : Agent(session) {}
 
 // ContactTracer act
 void ContactTracer::act() {

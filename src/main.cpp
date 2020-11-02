@@ -8,7 +8,7 @@ using json = nlohmann::json;
 
 int main(int argc, char** argv){
     if(argc != 2){
-        cout << "usage cTrace <config_path>" << endl;
+        //cout << "usage cTrace <config_path>" << endl;
         std::ifstream i("../config1.json");
         json j;
         j<<i;
