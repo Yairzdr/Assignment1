@@ -9,7 +9,8 @@ class Tree{
 public:
     Tree(int rootLabel);
     void addChild(const Tree& child);
-
+    int getRootLabel();
+    std::vector<Tree*> getChildren();
 
     static Tree* createTree(const Session& session, int rootLabel);
     virtual int traceTree()=0;

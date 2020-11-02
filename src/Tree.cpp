@@ -3,8 +3,7 @@
 //
 #include "../include/Tree.h"
 // simple constructor
-//Tree::Tree(int rootLabel):node(),children() {}//not sure about exact implementation
-
+Tree::Tree(int rootLabel):node(rootLabel),children() {}//not sure about exact implementation, what should get inside children?
 // destructor
 
 // copy constructor
@@ -24,17 +23,31 @@ void Tree::addChild(const Tree &child) {
 Tree *Tree::createTree(const Session &session, int rootLabel) {
     return nullptr;
 }
+//TreeLabel getter
+int Tree::getRootLabel() {
+    return node;
+}
+//children getter
+std::vector<Tree *> Tree::getChildren() {
+    return children;
+}
 
 // CycleTree simple constructor
-//CycleTree::CycleTree(int _rootLabel, int _currCycle) : Tree(_rootLabel),currCycle(_currCycle){}
+CycleTree::CycleTree(int _rootLabel, int _currCycle) : Tree(_rootLabel),currCycle(_currCycle){}
 
 // this used by the ContactTracer
 int CycleTree::traceTree() {
+    int curr=currCycle;
+    std::vector<Tree*> child=getChildren();
+    while(curr>0&child[0]!= nullptr)
+    {
+
+    }
     return 0;
 }
 
 // MaxRankTree simple constructor
-//MaxRankTree::MaxRankTree(int _rootLabel) : Tree(_rootLabel) {}
+MaxRankTree::MaxRankTree(int _rootLabel) : Tree(_rootLabel) {}
 
 // this used by the ContactTracer
 int MaxRankTree::traceTree() {
@@ -42,9 +55,9 @@ int MaxRankTree::traceTree() {
 }
 
 // RootTree simple constructor
-//RootTree::RootTree(int _rootLabel) : Tree(_rootLabel) {}
+RootTree::RootTree(int rootLabel) : Tree(rootLabel) {}
 
 // this used by the ContactTracer
 int RootTree::traceTree() {
-    return 0;
+    return getRootLabel();
 }

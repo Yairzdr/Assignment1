@@ -4,7 +4,7 @@
 
 #include "../include/Graph.h"
 // simple constructor
-//Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){}
+Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){}
 
 // destructor
 
