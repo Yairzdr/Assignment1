@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/spl211/CLionProjects/Assignment1/include/Graph.h
+/home/spl211/CLionProjects/include/Graph.h
 vector
 -
 
-/home/spl211/CLionProjects/Assignment1/include/Session.h
+/home/spl211/CLionProjects/include/Session.h
 vector
 -
 string
 -
 Graph.h
-/home/spl211/CLionProjects/Assignment1/include/Graph.h
+/home/spl211/CLionProjects/include/Graph.h
 
-/home/spl211/CLionProjects/Assignment1/include/json.hpp
+/home/spl211/CLionProjects/include/json.hpp
 algorithm
 -
 cassert
@@ -352,11 +352,11 @@ limits
 type_traits
 -
 
-/home/spl211/CLionProjects/Assignment1/src/Session.cpp
+/home/spl211/CLionProjects/src/Session.cpp
 ../include/Session.h
-/home/spl211/CLionProjects/Assignment1/include/Session.h
+/home/spl211/CLionProjects/include/Session.h
 ../include/json.hpp
-/home/spl211/CLionProjects/Assignment1/include/json.hpp
+/home/spl211/CLionProjects/include/json.hpp
 fstream
-/home/spl211/CLionProjects/Assignment1/src/fstream
+/home/spl211/CLionProjects/src/fstream
 

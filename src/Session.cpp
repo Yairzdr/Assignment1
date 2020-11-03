@@ -6,7 +6,7 @@
 #include "fstream"
 using json=nlohmann::json;
 using namespace std;
-Session::Session(const std::string &path) {
+Session::Session(const std::string &path):g(std::vector<std::vector<int>> ())  {
     std::ifstream i(path);
     json j;
     i >> j;
