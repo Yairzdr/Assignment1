@@ -2,18 +2,37 @@
 // Created by Yairzdr on 01/11/2020.
 //
 #include "../include/Session.h"
-// simple constructor
-
-// destructor
-
-// copy constructor
-
-// copy assignment operator
-
-// move constructor
-
-// move assignment operator
-
+#include "../include/json.hpp"
+#include "fstream"
+using json=nlohmann::json;
+using namespace std;
+Session::Session(const std::string &path) {
+    std::ifstream i(path);
+    json j;
+    i >> j;
+    json agent;
+    json graph;
+    for (int k = 0; k != j["agents"].size(); k++) {
+        agent += j["agents"][k];
+    }
+    for (int k = 0; k != j["graph"].size(); k++) {
+        graph += j["graph"][k];
+    }
+    string treeType = j["tree"];
+    if (treeType == "M")
+        TreeType::MaxRank;
+    else if (treeType == "C")
+        TreeType::Cycle;
+    else
+        TreeType::Root;
+    vector<vector<int>>  inputGraph(graph.size());
+    for (int n = 0; n < graph.size(); n++){
+        for(int m=0;m<graph[n].size();m++) {
+            inputGraph[n][m] = graph[n][m];
+        }
+    }
+    g=Graph(inputGraph);
+}
 // this function triggers the session
 void Session::simulate() {
 
@@ -40,5 +59,6 @@ int Session::dequeueInfected() {//where is the infected queue?
 TreeType Session::getTreeType() const{
     return treeType;
 }
+
 
 

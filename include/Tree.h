@@ -32,12 +32,12 @@ class MaxRankTree: public Tree{
 public:
     MaxRankTree(int rootLabel);
     virtual int traceTree();
-};//; was added by Yair
+};
 
 class RootTree: public Tree{
 public:
     RootTree(int rootLabel);
     virtual int traceTree();
-};//; was added by Yair
+};
 
 #endif

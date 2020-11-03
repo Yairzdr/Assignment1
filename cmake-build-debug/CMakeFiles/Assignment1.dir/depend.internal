@@ -12,6 +12,7 @@ CMakeFiles/Assignment1.dir/src/Graph.cpp.o
 CMakeFiles/Assignment1.dir/src/Session.cpp.o
  /home/spl211/CLionProjects/Assignment1/include/Graph.h
  /home/spl211/CLionProjects/Assignment1/include/Session.h
+ /home/spl211/CLionProjects/Assignment1/include/json.hpp
  /home/spl211/CLionProjects/Assignment1/src/Session.cpp
 CMakeFiles/Assignment1.dir/src/Tree.cpp.o
  /home/spl211/CLionProjects/Assignment1/include/Tree.h

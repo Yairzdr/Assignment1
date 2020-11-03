@@ -4,8 +4,8 @@
 
 #include "../include/Graph.h"
 // simple constructor
-Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){}
-
+Graph::Graph(std::vector<std::vector<int>> matrix):edges(matrix){}//make sure that it is deep copy
+Graph::Graph():edges() {}
 // destructor
 
 // copy constructor

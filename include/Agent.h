@@ -11,14 +11,14 @@ public:
     virtual void act()=0;
 private:
     Session& session;
-};//; by Yair
+};
 
 class ContactTracer: public Agent{
 public:
     ContactTracer(Session& session);
     
     virtual void act();
-};//; by Yair
+};
 
 
 class Virus: public Agent{
@@ -28,6 +28,6 @@ public:
     virtual void act();
 private:
     const int nodeInd;
-};//; by Yair
+};
 
 #endif
